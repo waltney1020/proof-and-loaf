@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://waltney1020.github.io/proof-and-loaf/sitemap.xml
