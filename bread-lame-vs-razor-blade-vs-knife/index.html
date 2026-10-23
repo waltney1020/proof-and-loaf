@@ -105,4 +105,12 @@ article h1,section>h1{margin-top:12px}.hero h1{margin-top:0}
 <p class="note">First published <time datetime="2026-10-22">October 22, 2026</time>. <a href="/guides/">Browse all sourdough gear guides</a>.</p></article></main>
 <footer class="site"><div class="wrap wide"><nav aria-label="Footer"><a href="/">Home</a><a href="/guides/">All guides</a><a href="/how-we-choose/">How we choose</a><a href="/about/">About</a><a href="/affiliate-disclosure/">Affiliate disclosure</a><a href="/privacy/">Privacy policy</a></nav>
 <p>As an Amazon Associate I earn from qualifying purchases. Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates.</p>
-<p>&copy; 2026 Proof & Loaf. Honest, research-based gear advice for home sourdough bakers.</p></div></footer></body></html>
+<p>&copy; 2026 Proof & Loaf. Honest, research-based gear advice for home sourdough bakers.</p></div></footer><script>(function(){try{if(navigator.webdriver||/bot|crawl|spider|preview|lighthouse/i.test(navigator.userAgent))return;
+var N="https://abacus.jasoncameron.dev/hit/proofandloaf/",p=(location.pathname.replace(/^\/+|\/+$/g,"")||"home").toLowerCase().replace(/[^a-z0-9-]/g,"-").slice(0,50);
+var q=new URLSearchParams(location.search),s=(q.get("utm_source")||"").toLowerCase().replace(/[^a-z0-9-]/g,"").slice(0,20),h="";
+try{h=document.referrer?new URL(document.referrer).hostname:""}catch(e){}
+if(!s){s="direct";if(h==location.hostname)s="internal";else if(/pinterest|pin\.it/.test(h))s="pinterest";else if(/(^|\.)(x|twitter)\.com$|^t\.co$/.test(h))s="x";else if(/google\./.test(h))s="google";else if(/bing|duckduckgo|yahoo|ecosia|brave/.test(h))s="search-other";else if(h)s="other"}
+var d=new Date().toISOString().slice(0,10).replace(/-/g,"");
+function hit(k){try{fetch(N+k,{mode:"no-cors",keepalive:true,credentials:"omit"})}catch(e){}}
+hit("pv-all");hit("pv-"+p);hit("ref-"+s);hit("day-"+d);
+document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest('a[href*="amazon.com"]');if(a){hit("click-all");hit("click-"+p);hit("clickday-"+d)}},true)}catch(e){}})();</script></body></html>

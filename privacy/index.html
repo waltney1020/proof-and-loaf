@@ -59,7 +59,7 @@ article h1,section>h1{margin-top:12px}.hero h1{margin-top:0}
 <p>This policy explains what information Proof &amp; Loaf (&ldquo;we&rdquo;) collects when you visit this website and how it is used.</p>
 <h2>Information we collect</h2>
 <ul><li><strong>No accounts, no forms.</strong> We don&rsquo;t ask for your name, email or any personal details.</li>
-<li><strong>Analytics.</strong> We may use privacy-friendly, cookieless analytics (such as Cloudflare Web Analytics) to count page views and see which guides are useful. This data is aggregated and is not used to identify you.</li>
+<li><strong>Analytics.</strong> We use a simple cookieless page counter (the free, open-source Abacus counting service). When a page loads, your browser asks it to add one to anonymous counters: the page name, the date, and the kind of site that sent you (for example Pinterest, X, Google or direct). If you click a link to Amazon, a click counter goes up too. No cookies, no local storage, no IP-based profiles, and nothing that identifies you is stored by us.</li>
 <li><strong>Hosting logs.</strong> Our hosting provider may keep standard server logs (such as IP address, browser type and pages requested) for security and reliability.</li></ul>
 <h2>Affiliate links and third-party cookies</h2>
 <p>This site contains affiliate links to Amazon.com. As an Amazon Associate I earn from qualifying purchases. When you click one of these links you leave our site, and Amazon may set cookies or collect information under its own privacy notice so that a resulting purchase can be credited to us. We don&rsquo;t receive any personal information about you or what you buy beyond aggregated, anonymous order reports.</p>
@@ -68,4 +68,12 @@ article h1,section>h1{margin-top:12px}.hero h1{margin-top:0}
 <h2>Changes</h2><p>If this policy changes, we will update the date at the top of this page.</p></article></main>
 <footer class="site"><div class="wrap wide"><nav aria-label="Footer"><a href="/">Home</a><a href="/guides/">All guides</a><a href="/how-we-choose/">How we choose</a><a href="/about/">About</a><a href="/affiliate-disclosure/">Affiliate disclosure</a><a href="/privacy/">Privacy policy</a></nav>
 <p>As an Amazon Associate I earn from qualifying purchases. Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates.</p>
-<p>&copy; 2026 Proof & Loaf. Honest, research-based gear advice for home sourdough bakers.</p></div></footer></body></html>
+<p>&copy; 2026 Proof & Loaf. Honest, research-based gear advice for home sourdough bakers.</p></div></footer><script>(function(){try{if(navigator.webdriver||/bot|crawl|spider|preview|lighthouse/i.test(navigator.userAgent))return;
+var N="https://abacus.jasoncameron.dev/hit/proofandloaf/",p=(location.pathname.replace(/^\/+|\/+$/g,"")||"home").toLowerCase().replace(/[^a-z0-9-]/g,"-").slice(0,50);
+var q=new URLSearchParams(location.search),s=(q.get("utm_source")||"").toLowerCase().replace(/[^a-z0-9-]/g,"").slice(0,20),h="";
+try{h=document.referrer?new URL(document.referrer).hostname:""}catch(e){}
+if(!s){s="direct";if(h==location.hostname)s="internal";else if(/pinterest|pin\.it/.test(h))s="pinterest";else if(/(^|\.)(x|twitter)\.com$|^t\.co$/.test(h))s="x";else if(/google\./.test(h))s="google";else if(/bing|duckduckgo|yahoo|ecosia|brave/.test(h))s="search-other";else if(h)s="other"}
+var d=new Date().toISOString().slice(0,10).replace(/-/g,"");
+function hit(k){try{fetch(N+k,{mode:"no-cors",keepalive:true,credentials:"omit"})}catch(e){}}
+hit("pv-all");hit("pv-"+p);hit("ref-"+s);hit("day-"+d);
+document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest('a[href*="amazon.com"]');if(a){hit("click-all");hit("click-"+p);hit("clickday-"+d)}},true)}catch(e){}})();</script></body></html>
