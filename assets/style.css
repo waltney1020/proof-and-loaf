@@ -43,3 +43,13 @@ article h1,section>h1{margin-top:12px}.hero h1{margin-top:0}
 .method{font-size:.9rem;color:var(--muted);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:10px 0}
 .faq h3{font-size:1.1rem;margin:1.3em 0 .3em}.faq p{margin:0}
 .skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:var(--paper);padding:8px 12px;z-index:9}
+
+.hero{padding:40px 0 24px}
+.season{background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:28px 0 4px}
+.season h2{margin:0 0 .35em;font-size:1.45rem}
+.season .intro{margin:0 0 4px;color:var(--muted);max-width:640px}
+.season .note{margin:8px 0 0}
+.season .grid{margin:16px 0 24px}
+.season .card{padding:20px}
+.season .card .btn{margin-top:auto;align-self:flex-start;text-decoration:none}
+.season .card .btn:hover{text-decoration:none}
